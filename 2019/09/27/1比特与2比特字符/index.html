@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | xyz</title>
+  <title>1比特与2比特字符 | xyz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xyz">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示。&amp;emsp;&amp;emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。 示例输入:  bits = [1, 0, 0] 输出: True 输入:  bits = [1, 1, 1, 0] 输出: False注意&amp;emsp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1比特与2比特字符">
+<meta property="og:url" content="http://yoursite.com/2019/09/27/1比特与2比特字符/index.html">
 <meta property="og:site_name" content="xyz">
+<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示。&amp;emsp;&amp;emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。 示例输入:  bits = [1, 0, 0] 输出: True 输入:  bits = [1, 1, 1, 0] 输出: False注意&amp;emsp">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-27T08:42:27.924Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xyz">
+<meta name="twitter:title" content="1比特与2比特字符">
+<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示。&amp;emsp;&amp;emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。 示例输入:  bits = [1, 0, 0] 输出: True 输入:  bits = [1, 1, 1, 0] 输出: False注意&amp;emsp">
   
     <link rel="alternative" href="/atom.xml" title="xyz" type="application/atom+xml">
   
@@ -150,76 +154,184 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-1比特与2比特字符" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      1比特与2比特字符
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/27/1比特与2比特字符/" class="archive-article-date">
+
+        
+        <a href="/2019/09/27/1比特与2比特字符/" class="archive-article-date">
   	<time datetime="2019-09-27T07:30:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/27/1比特与2比特字符/">1比特与2比特字符</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>&emsp;&emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示。<br><br>&emsp;&emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre><code>输入: 
+bits = [1, 0, 0]
+输出: True
+输入: 
+bits = [1, 1, 1, 0]
+输出: False</code></pre><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>&emsp;1 &lt;= len(bits) &lt;= 1000.<br><br>&emsp;bits[i] 总是0 或 1.</p>
+<p>来源：力扣（LeetCode）<br><br>链接：<a href="https://leetcode-cn.com/problems/1-bit-and-2-bit-characters" target="_blank" rel="noopener">https://leetcode-cn.com/problems/1-bit-and-2-bit-characters</a><br><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>　　很简单的一个题目，遍历整个数组，只要是１那么肯定是２比特字符，那么下一个元素是０还是１就没有意义，直接跳过再看第三个就行。<br>　　要判断的是最后的０是一比特还是２比特字符，那么如果该字符没有被跳过就是１比特字符</p>
+<pre><code>public class test {
 
-        <div class="article-info info-on-right">
-          
-          
+    public static void main(String[] args) {
+        int[] arr = {1,1,1,1,1,0};
+        boolean flag = isOneBite(arr);
+        System.out.println(flag);
+    }
+    private static boolean isOneBite(int[] arr) {
+        for (int i = 0; i &lt; arr.length; i++) {
+            int n = i + 1;
+            if (arr[i] == 1) {
+                i++;
+                continue;
+            }
+            if (i == arr.length-1){
+                return true;
+            }
+        }
+        return false;
+    }
+}</code></pre>
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/27/1比特与2比特字符/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/27/hello-world/" class="archive-article-date">
-  	<time datetime="2019-09-27T03:24:19.600Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/27/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +354,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
