@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="xyz">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示&amp;emsp;&amp;emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-28T07:45:40.162Z">
+<meta property="og:updated_time" content="2019-09-30T08:21:04.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1比特与2比特字符">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;有两种特殊字符。第一种字符可以用一比特0来表示。第二种字符可以用两比特(10 或 11)来表示&amp;emsp;&amp;emsp;现给一个由若干比特组成的字符串。问最后一个字符是否必定为一个一比特字符。给定的字符串总是由0结束。">
@@ -184,28 +184,8 @@ bits = [1, 0, 0]
 bits = [1, 1, 1, 0]
 输出: False</code></pre><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>&emsp;1 &lt;= len(bits) &lt;= 1000.<br><br>&emsp;bits[i] 总是0 或 1.</p>
 <p>来源：力扣（LeetCode）<br><br>链接：<a href="https://leetcode-cn.com/problems/1-bit-and-2-bit-characters" target="_blank" rel="noopener">https://leetcode-cn.com/problems/1-bit-and-2-bit-characters</a><br><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>　　很简单的一个题目，遍历整个数组，只要是１那么肯定是２比特字符，那么下一个元素是０还是１就没有意义，直接跳过再看第三个就行。<br>　　要判断的是最后的０是一比特还是２比特字符，那么如果该字符没有被跳过就是１比特字符</p>
-<pre><code>public class test {
-
-    public static void main(String[] args) {
-        int[] arr = {1,1,1,1,1,0};
-        boolean flag = isOneBite(arr);
-        System.out.println(flag);
-    }
-    private static boolean isOneBite(int[] arr) {
-        for (int i = 0; i &lt; arr.length; i++) {
-            int n = i + 1;
-            if (arr[i] == 1) {
-                i++;
-                continue;
-            }
-            if (i == arr.length-1){
-                return true;
-            }
-        }
-        return false;
-    }
-}</code></pre>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>　　很简单的一个题目，遍历整个数组，只要是１那么肯定是２比特字符，那么下一个元素是０还是１就没有意义，直接跳过再看第三个就行。<br>　　要判断的是最后的０是一比特还是２比特字符，那么如果该字符没有被跳过就是１比特字符<br></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public class test &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int[] arr = &#123;1,1,1,1,1,0&#125;;</span><br><span class="line">        boolean flag = isOneBite(arr);</span><br><span class="line">        System.out.println(flag);</span><br><span class="line">    &#125;</span><br><span class="line">    private static boolean isOneBite(int[] arr) &#123;</span><br><span class="line">        for (int i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">            int n = i + 1;</span><br><span class="line">            if (arr[i] == 1) &#123;</span><br><span class="line">                i++;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if (i == arr.length-1)&#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -492,6 +472,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">simple</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
               </li>
             
             <div class="clearfix"></div>
