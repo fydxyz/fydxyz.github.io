@@ -8,17 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>初学python | xyz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="保留字&amp;apos;False&amp;apos;, &amp;apos;None&amp;apos;, &amp;apos;True&amp;apos;, &amp;apos;and&amp;apos;, &amp;apos;as&amp;apos;, &amp;apos;assert&amp;apos;, &amp;apos;break&amp;apos;, &amp;apos;class&amp;apos;, &amp;apos;continue&amp;apos;, &amp;apos;def&amp;apos;, &amp;apos;del&amp;ap">
+  <meta name="description" content="基本数据类型1、Python中，变量就是变量，它没有类型，所说的”类型“是变量所指的内存中对象的类型。2、变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。3、标准数据类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初学python">
 <meta property="og:url" content="http://yoursite.com/2019/09/29/初学python/index.html">
 <meta property="og:site_name" content="xyz">
-<meta property="og:description" content="保留字&amp;apos;False&amp;apos;, &amp;apos;None&amp;apos;, &amp;apos;True&amp;apos;, &amp;apos;and&amp;apos;, &amp;apos;as&amp;apos;, &amp;apos;assert&amp;apos;, &amp;apos;break&amp;apos;, &amp;apos;class&amp;apos;, &amp;apos;continue&amp;apos;, &amp;apos;def&amp;apos;, &amp;apos;del&amp;ap">
+<meta property="og:description" content="基本数据类型1、Python中，变量就是变量，它没有类型，所说的”类型“是变量所指的内存中对象的类型。2、变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。3、标准数据类型">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-29T01:27:14.953Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019100711014894.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191007110509213.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODgxNzE1,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-10-07T03:19:37.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学python">
-<meta name="twitter:description" content="保留字&amp;apos;False&amp;apos;, &amp;apos;None&amp;apos;, &amp;apos;True&amp;apos;, &amp;apos;and&amp;apos;, &amp;apos;as&amp;apos;, &amp;apos;assert&amp;apos;, &amp;apos;break&amp;apos;, &amp;apos;class&amp;apos;, &amp;apos;continue&amp;apos;, &amp;apos;def&amp;apos;, &amp;apos;del&amp;ap">
+<meta name="twitter:description" content="基本数据类型1、Python中，变量就是变量，它没有类型，所说的”类型“是变量所指的内存中对象的类型。2、变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。3、标准数据类型">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2019100711014894.png">
   
     <link rel="alternative" href="/atom.xml" title="xyz" type="application/atom+xml">
   
@@ -174,12 +177,59 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="保留字"><a href="#保留字" class="headerlink" title="保留字"></a>保留字</h4><pre><code>&apos;False&apos;, &apos;None&apos;, &apos;True&apos;, &apos;and&apos;, &apos;as&apos;, &apos;assert&apos;,
-&apos;break&apos;, &apos;class&apos;, &apos;continue&apos;, &apos;def&apos;, &apos;del&apos;, &apos;elif&apos;,
-&apos;else&apos;, &apos;except&apos;, &apos;finally&apos;, &apos;for&apos;, &apos;from&apos;, &apos;global&apos;,
-&apos;if&apos;, &apos;import&apos;, &apos;in&apos;, &apos;is&apos;, &apos;lambda&apos;, &apos;nonlocal&apos;, 
-&apos;not&apos;, &apos;or&apos;, &apos;pass&apos;, &apos;raise&apos;, &apos;return&apos;, &apos;try&apos;, 
-&apos;while&apos;, &apos;with&apos;, &apos;yield&apos;</code></pre><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4>
+        <h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><p>1、Python中，变量就是变量，它没有类型，所说的”类型“是变量所指的内存中对象的类型。<br>2、变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>3、标准数据类型</p>
+<a id="more"></a>
+<h5 id="Number（数字）"><a href="#Number（数字）" class="headerlink" title="Number（数字）"></a>Number（数字）</h5><ul>
+<li><p>数字有四种类型：int（整数）、bool（布尔）、float（浮点数）、complex（复数）</p>
+</li>
+<li><p>Python可以同时为多个变量赋值，如a, b = 1, 2。  </p>
+</li>
+<li><p>一个变量可以通过赋值指向不同类型的对象。   </p>
+</li>
+<li><p>数值的除法包含两个运算符：/返回一个浮点数，// 返回一个整数.</p>
+</li>
+<li><p>在混合计算时，Python会把整型转换成为浮点数。</p>
+<h5 id="String（字符串）"><a href="#String（字符串）" class="headerlink" title="String（字符串）"></a>String（字符串）</h5><p>索引值以 0 为开始值，-1 为从末尾的开始位置。<br> <img src="https://img-blog.csdnimg.cn/2019100711014894.png" alt="在这里插入图片描述"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Runoob'</span></span><br><span class="line"> </span><br><span class="line">print (str)          # 输出字符串</span><br><span class="line">print (str[0:-1])    # 输出第一个到倒数第二个的所有字符</span><br><span class="line">print (str[0])       # 输出字符串第一个字符</span><br><span class="line">print (str[2:5])     # 输出从第三个开始到第五个的字符</span><br><span class="line">print (str[2:])      # 输出从第三个开始的后的所有字符</span><br><span class="line">print (str * 2)      # 输出字符串两次</span><br><span class="line">print (str + "TEST") # 连接字符串</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>反斜杠可以用来转义，使用r可以让反斜杠不发生转义。 </p>
+</li>
+<li><p>字符串可以用+运算符连接在一起，用*运算符重复。</p>
+</li>
+<li><p>Python中的字符串有两种索引方式，从左往右以0开始，从右往左以-1开始。 </p>
+</li>
+<li><p>Python中的字符串不能改变。</p>
+<h5 id="List（列表）"><a href="#List（列表）" class="headerlink" title="List（列表）"></a>List（列表）</h5><p>列表中元素的类型可以不相同，它支持数字，字符串甚至可以包含列表<br><img src="https://img-blog.csdnimg.cn/20191007110509213.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODgxNzE1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">list = [ <span class="string">'abcd'</span>, <span class="number">786</span> , <span class="number">2.23</span>, <span class="string">'runoob'</span>, <span class="number">70.2</span> ]</span><br><span class="line">tinylist = [<span class="number">123</span>, <span class="string">'runoob'</span>]</span><br><span class="line"> </span><br><span class="line"><span class="keyword">print</span> (list)            <span class="comment"># 输出完整列表</span></span><br><span class="line"><span class="keyword">print</span> (list[<span class="number">0</span>])         <span class="comment"># 输出列表第一个元素</span></span><br><span class="line"><span class="keyword">print</span> (list[<span class="number">1</span>:<span class="number">3</span>])       <span class="comment"># 从第二个开始输出到第三个元素</span></span><br><span class="line"><span class="keyword">print</span> (list[<span class="number">2</span>:])        <span class="comment"># 输出从第三个元素开始的所有元素</span></span><br><span class="line"><span class="keyword">print</span> (tinylist * <span class="number">2</span>)    <span class="comment"># 输出两次列表</span></span><br><span class="line"><span class="keyword">print</span> (list + tinylist) <span class="comment"># 连接列表</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<ul>
+<li>List写在方括号之间，元素用逗号隔开。</li>
+<li>和字符串一样，list可以被索引和切片。</li>
+<li>List可以使用+操作符进行拼接。</li>
+<li>List中的元素是可以改变的。<h5 id="Tuple（元组）"><a href="#Tuple（元组）" class="headerlink" title="Tuple（元组）"></a>Tuple（元组）</h5></li>
+<li>与字符串一样，元组的元素不能修改。</li>
+<li>元组也可以被索引和切片，方法一样。</li>
+<li>注意构造包含 0 或 1 个元素的元组的特殊语法规则。</li>
+<li>元组也可以使用+操作符进行拼接。<h5 id="Set（集合）"><a href="#Set（集合）" class="headerlink" title="Set（集合）"></a>Set（集合）</h5></li>
+<li>集合（set）是由一个或数个形态各异的大小整体组成的，构成集合的事物或对象称作元素或是成员。</li>
+<li>基本功能是进行成员关系测试和删除重复元素。</li>
+<li>可以使用大括号 { } 或者 set() 函数创建集合。</li>
+<li>注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">student = &#123;<span class="string">'Tom'</span>, <span class="string">'Jim'</span>, <span class="string">'Mary'</span>, <span class="string">'Tom'</span>, <span class="string">'Jack'</span>, <span class="string">'Rose'</span>&#125;</span><br><span class="line"> </span><br><span class="line">print(student)   <span class="comment"># 输出集合，重复的元素被自动去掉</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 成员测试</span></span><br><span class="line"><span class="keyword">if</span> <span class="string">'Rose'</span> <span class="keyword">in</span> student :</span><br><span class="line">    print(<span class="string">'Rose 在集合中'</span>)</span><br><span class="line"><span class="keyword">else</span> :</span><br><span class="line">    print(<span class="string">'Rose 不在集合中'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment"># set可以进行集合运算</span></span><br><span class="line">a = set(<span class="string">'abracadabra'</span>)</span><br><span class="line">b = set(<span class="string">'alacazam'</span>)</span><br><span class="line"> </span><br><span class="line">print(a)</span><br><span class="line"> </span><br><span class="line">print(a - b)     <span class="comment"># a 和 b 的差集</span></span><br><span class="line"> </span><br><span class="line">print(a | b)     <span class="comment"># a 和 b 的并集</span></span><br><span class="line"> </span><br><span class="line">print(a &amp; b)     <span class="comment"># a 和 b 的交集</span></span><br><span class="line"> </span><br><span class="line">print(a ^ b)     <span class="comment"># a 和 b 中不同时存在的元素</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Dictionary（字典）"><a href="#Dictionary（字典）" class="headerlink" title="Dictionary（字典）"></a>Dictionary（字典）</h5><ul>
+<li>列表是有序的对象集合，字典是无序的对象集合。两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。</li>
+<li>字典是一种映射类型，字典用 { } 标识，它是一个无序的 键(key) : 值(value) 的集合。</li>
+<li>键(key)必须使用不可变类型。</li>
+<li>在同一个字典中，键(key)必须是唯一的。</li>
+<li>创建空字典使用 { }</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tinydict = &#123;<span class="string">'name'</span>: <span class="string">'runoob'</span>,<span class="string">'code'</span>:<span class="number">1</span>, <span class="string">'site'</span>: <span class="string">'www.runoob.com'</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (dict[<span class="string">'one'</span>])       <span class="comment"># 输出键为 'one' 的值</span></span><br><span class="line"><span class="keyword">print</span> (dict[<span class="number">2</span>])           <span class="comment"># 输出键为 2 的值</span></span><br><span class="line"><span class="keyword">print</span> (tinydict)          <span class="comment"># 输出完整的字典</span></span><br><span class="line"><span class="keyword">print</span> (tinydict.keys())   <span class="comment"># 输出所有键</span></span><br><span class="line"><span class="keyword">print</span> (tinydict.values()) <span class="comment"># 输出所有值</span></span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -214,7 +264,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
+        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
