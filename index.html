@@ -326,13 +326,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h5 id="描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用"><a href="#描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用" class="headerlink" title="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用"></a>描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用</h5><blockquote>
+        <h5 id="描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用"><a href="#描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用" class="headerlink" title="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用"></a>描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用</h5><blockquote>
 <p>为什么写这个呢，有些一个小坑<br>list是可变的，它始终是那个对象，而int值变了，对象就变了</p>
 </blockquote>
-<h6 id="错误的-原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象"><a href="#错误的-原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象" class="headerlink" title="错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象"></a>错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def f():</span><br><span class="line">	a = 0</span><br><span class="line">	def g():</span><br><span class="line">		a = a + 1</span><br><span class="line">		return a</span><br><span class="line">	retuen g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b = f()</span><br><span class="line">print(b())</span><br></pre></td></tr></table></figure>
-
-<h6 id="正确的"><a href="#正确的" class="headerlink" title="正确的"></a>正确的</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [0]</span><br><span class="line">def f():</span><br><span class="line">	def g():</span><br><span class="line">		a[0] = a[0] + 1</span><br><span class="line">		retuen a[0]</span><br><span class="line">	retuen g</span><br></pre></td></tr></table></figure>
+        
       
 
       
@@ -405,10 +402,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><h6 id="就是类似101、111这种从左读和从右读都一样的数字"><a href="#就是类似101、111这种从左读和从右读都一样的数字" class="headerlink" title="就是类似101、111这种从左读和从右读都一样的数字"></a>就是类似101、111这种从左读和从右读都一样的数字</h6><h6 id="我的想法，这是在学filter的时候的练习题"><a href="#我的想法，这是在学filter的时候的练习题" class="headerlink" title="我的想法，这是在学filter的时候的练习题"></a>我的想法，这是在学filter的时候的练习题</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def f(a):</span><br><span class="line">    b = str(a)</span><br><span class="line">    l = len(b)</span><br><span class="line">    flag = True</span><br><span class="line">    for i in range(l):</span><br><span class="line">        if b[i] != b[l-i-1]:</span><br><span class="line">            flag = False</span><br><span class="line">    if flag:</span><br><span class="line">        return a</span><br><span class="line">p = range(1000)</span><br><span class="line">r = list(filter(f, p))</span><br><span class="line">print(r)</span><br></pre></td></tr></table></figure>
-
-<h6 id="人家的"><a href="#人家的" class="headerlink" title="人家的"></a>人家的</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def f(a):</span><br><span class="line">	if str(a) == str(a)[::-1]</span><br><span class="line">	return a</span><br></pre></td></tr></table></figure>
+        <h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><h6 id="就是类似101、111这种从左读和从右读都一样的数字"><a href="#就是类似101、111这种从左读和从右读都一样的数字" class="headerlink" title="就是类似101、111这种从左读和从右读都一样的数字"></a>就是类似101、111这种从左读和从右读都一样的数字</h6>
+        
       
 
       
@@ -1068,11 +1063,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
+                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
               </li>
             
             <div class="clearfix"></div>
