@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>闭包 | xyz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用">
+  <meta name="description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用 为什么写这个呢，有些一个小坑list是可变的，它始终是那个对象，而int值变了，对象就变了  错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象12345678910def f():	a = 0	def g():		a = a + 1		return a	retuen gb = f()print(b())  正">
 <meta property="og:type" content="article">
 <meta property="og:title" content="闭包">
 <meta property="og:url" content="http://yoursite.com/2019/10/10/闭包/index.html">
 <meta property="og:site_name" content="xyz">
-<meta property="og:description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用">
+<meta property="og:description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用 为什么写这个呢，有些一个小坑list是可变的，它始终是那个对象，而int值变了，对象就变了  错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象12345678910def f():	a = 0	def g():		a = a + 1		return a	retuen gb = f()print(b())  正">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-10T13:18:40.605Z">
+<meta property="og:updated_time" content="2019-10-11T08:34:39.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="闭包">
-<meta name="twitter:description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用">
+<meta name="twitter:description" content="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用 为什么写这个呢，有些一个小坑list是可变的，它始终是那个对象，而int值变了，对象就变了  错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象12345678910def f():	a = 0	def g():		a = a + 1		return a	retuen gb = f()print(b())  正">
   
     <link rel="alternative" href="/atom.xml" title="xyz" type="application/atom+xml">
   
@@ -174,8 +174,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用"><a href="#描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用" class="headerlink" title="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用"></a>描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用</h5><a id="more"></a>
-<blockquote>
+        <a id="more"></a>
+<h5 id="描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用"><a href="#描述-闭包实现计数器-闭包就是内部函数对外部函数作用域变量的引用" class="headerlink" title="描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用"></a>描述:闭包实现计数器,闭包就是内部函数对外部函数作用域变量的引用</h5><blockquote>
 <p>为什么写这个呢，有些一个小坑<br>list是可变的，它始终是那个对象，而int值变了，对象就变了</p>
 </blockquote>
 <h6 id="错误的-原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象"><a href="#错误的-原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象" class="headerlink" title="错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象"></a>错误的,原因就是a的值变化了，那么a就不是原来的a了，它指向了新的对象</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def f():</span><br><span class="line">	a = 0</span><br><span class="line">	def g():</span><br><span class="line">		a = a + 1</span><br><span class="line">		return a</span><br><span class="line">	retuen g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b = f()</span><br><span class="line">print(b())</span><br></pre></td></tr></table></figure>
@@ -283,6 +283,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/10/11/装饰器/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          装饰器
+        
+      </div>
+    </a>
   
   
     <a href="/2019/10/10/回字/" id="article-nav-older" class="article-nav-link-wrap">
